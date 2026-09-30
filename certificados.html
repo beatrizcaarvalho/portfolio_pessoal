@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>certificados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="certificados.css"
+</head>
+<header class="cabecalho">
+
+    <div class="logo">
+        Beatriz Carvalho ───⟡
+    </div>
+
+    <nav class="menu">
+        <a href="index.html">início</a>
+        <a href="sobremim.html">sobre mim</a>
+        <a href="certificados.html">certificados</a>
+        <a href="projetos.html">projetos</a>
+        <a href="contatos.html">contato</a>
+    </nav>
+</header>
+
+<section class="certificados">
+
+    <h1>Meus Certificados</h1>
+
+    <div class="conteudo-certificados">
+
+    
+        <div class="texto-esquerda">
+            <h2>Minha formação</h2>
+            <p>
+               Durante minha formação no SENAI Cruzeiro, tive a oportunidade de realizar cursos que ampliaram<br> meus conhecimentos em tecnologia e inovação.<br>
+               <br>
+Em 2026, concluí a formação Acelerando a Transição para a Economia Circular, que me permitiu <br>conhecer conceitos relacionados à sustentabilidade, inovação e novas formas de pensar o uso de recursos.<br>
+<br>
+Também concluí a formação Implantação de Serviços de Inteligência Artificial em Nuvem – Microsoft<br> AI-900, na qual tive contato com conceitos fundamentais de Inteligência Artificial e seus serviços em <br>nuvem.<br>
+<br>
+Essas formações fazem parte da minha busca por ampliar meus conhecimentos e me preparar cada vez<br> mais para atuar na área de tecnologia.
+            </p>
+        </div>
+
+        <div class="carrossel">
+
+            <button onclick="mudarCertificado(-1)">❮</button>
+
+            <div class="certificado">
+                <img id="certificadoAtual"
+                     src="certificado_1.jpg"
+                     alt="Certificado">
+            </div>
+
+            <button onclick="mudarCertificado(1)">❯</button>
+
+</section>
+ <script>
+
+        const certificados = [
+            "certificado_1.jpg",
+            "certificado_2.jpg"
+        ];
+
+        let certificadoAtual = 0;
+
+        function mudarCertificado(direcao) {
+
+            certificadoAtual += direcao;
+
+            if (certificadoAtual < 0) {
+                certificadoAtual = certificados.length - 1;
+            }
+
+            if (certificadoAtual >= certificados.length) {
+                certificadoAtual = 0;
+            }
+
+            document.getElementById("certificadoAtual").src =
+                certificados[certificadoAtual];
+        }
+
+    </script>
+
+   
+</body>
+</html>

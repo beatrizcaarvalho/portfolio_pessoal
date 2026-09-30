@@ -1,0 +1,140 @@
+* {
+    margin:  0;
+    padding: 0px;
+    box-sizing:; border-box;
+}
+
+body {
+    background-color: #F7E6D2;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px 25px;
+    background-color: #F7E6D2;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #F28C28;
+    font-size: 20px;
+}
+
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #222222;
+    background-color: #F7E6D2;
+    padding: 10px 22px;
+    border: 2px solid #D96B27;
+    border-radius: 10px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #F28C28;
+    transform: translateY(-2px);
+}
+
+** {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 40px;
+    background-color: #F7E6D2;
+    color: #222222;
+    font-family: 'Poppins', sans-serif;
+}
+.sobre h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.sobre p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    padding: 60px 40px;
+}
+
+.texto-sobre {
+    width: 500px;
+}
+.foto-sobre {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.30);
+}
+
+.foto-sobre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.foto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descricao-foto {
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #D96B27;
+    text-align: center;
+    white-space: nowrap;
+}
+.texto-sobre {
+    animation: textoEntrar 1s ease-out;
+}
+
+.foto-container {
+    animation: fotoEntrar 1.2s ease-out;
+}
+
+@keyframes textoEntrar {
+    from {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fotoEntrar {
+    from {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
